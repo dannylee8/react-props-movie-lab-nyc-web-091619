@@ -13,15 +13,18 @@
   "dependencies": {
     "mocha-multi": "^1.0.1",
     "react": "^16.4.1",
-    "react-dom": "^16.4.1",
-    "react-scripts": "^1.1.5",
-    "webpack": "^3.11.0"
+    "react-dom": "^16.4.2",
+    "react-scripts": "^3.0.0",
+    "webpack": "^4.0.0",
+    "snyk": "^1.339.2"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "mocha -w ./test/*.test.js",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
@@ -34,5 +37,6 @@
     "enzyme-adapter-react-16": "^1.1.1",
     "mocha": "^5.2.0",
     "sinon": "^6.1.0"
-  }
+  },
+  "snyk": true
 }
